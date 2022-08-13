@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --white-color: #fff;
+    --primary-color: #27292c;
+    --second-color: #343434;
+    --btn-color: #54524f;
+    --black-color: #000;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+}
+p{
+    font-size: 0.9rem;
+}
+.w-100{
+    width: 100%;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.btn{
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+}
+.btn__primary{
+    background: var(--primary-color);
+    color: var(--white-color);
+    padding: 4px 16px;
+    font-size: 0.75rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    border-radius: 16px;
+    letter-spacing: 2px;
+    margin: 36px auto;
+}
+.btn__secondary{
+    background: var(--white-color);
+    color: var(--primary-color);
+    padding: 4px 16px;
+    font-size: 0.8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    border-radius: 16px;
+    margin: 36px auto;
+}
+#header{
+    background: url('/images/header-bg.jpg') top center no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 120px;
+}
+#header .header__wrapper{
+    width: 80vw;
+    margin: auto;
+}
+#header .navbar{
+    padding-top: 36px;
+    padding-bottom: 120px;
+}
+#header .navbar__list{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 24px;
+}
+#header .navbar__item__link{
+    color: var(--white-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+#header .search__group{
+    background-color: var(--white-color);
+    border-radius: 16px;
+    padding: 4px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+#header .search__group input{
+    border: none;
+    height: 24px;
+}
+#header .btn__search__submit{
+    cursor: pointer;
+}
+#header .search__group input:focus,
+#header .search__group input:focus-visible{
+    outline: none;
+}
+#header .header__banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+}
+#header .header__banner .header__banner__left{
+    color: var(--white-color);
+    flex: 1;
+}
+#header .header__banner .header__banner__left h1{
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 4.5em;
+    margin: 16px auto 36px;
+}
+#header .header__banner .header__banner__left h3{
+    font-style: italic;
+    text-transform: uppercase;
+    margin: 30px auto;
+}
+#header .header__banner .header__banner__left p{
+    font-size: 0.9rem;
+    font-style: italic;
+}
+#header .header__banner .header__banner__left button{
+    margin-bottom: 12px;
+}
+#header .header__banner .header__banner__right{
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+}
+.img__leaf{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+/* Content */
+
+#content .service h1{
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 4.5em;
+    margin: 16px auto 36px;
+}
+
+/* Service */
+#content .service__wrapper{
+    width: 80vw;
+    margin: 24px auto;
+}
+.service__wrapper .service__title{
+    text-align: center;
+    margin-bottom: 48px;
+}
+.service__wrapper .service__items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-items: start;
+    gap: 12px;
+    margin-bottom: 36px;
+}
+.service__items .service__item__img{
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+.service__wrapper button.btn__primary{
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+/* Info */
+.info__wrapper{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 120px 0;
+}
+.info, .discount__wrapper{
+    width: 80vw;
+    margin: auto;
+}
+.info h1{
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 4.5em;
+    margin: 16px auto 36px;
+    text-align: center;
+}
+.info .info__content__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+}
+.info__content__left,
+.info__content__right{
+    flex: 1;
+}
+.info button{
+    display: block;
+    margin: 36px auto;
+}
+
+/* Discount */
+.discount{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    margin: 36px auto;
+}
+.discount__left,
+.discount__right{
+    flex: 1;
+}
+
+.discount__left h2,
+.discount__right h2{
+    font-size: 3rem;
+    letter-spacing: 2px;
+    margin-bottom: 24px;
+}
+
+/* Menu */
+.menu__wrapper{
+    background: url('/images/header-bg.jpg') center center no-repeat;
+    background-size: cover;
+}
+.menu{
+    width: 80vw;
+    margin: auto;
+    color: var(--white-color);
+    text-align: center;
+    padding: 36px 0;
+    position: relative;
+    min-height: 1000px;
+}
+.menu h1{
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 4.5em;
+    margin: 16px auto 36px;
+    text-align: center;
+}
+.divider{
+    width: 100px;
+    height: 4px;
+    background: var(--white-color);
+    margin: 24px auto;
+}
+
+.menu .menu__img__half{
+    position: absolute;
+    left: 25%;
+    top: 100%;
+    transform: translate(-5%, -65%);
+}
+.menu .menu__img__full{
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-30%, -85%);
+}
+.sub_menu__wrapper{
+    width: 80vw;
+    margin: 120px auto ;
+}
+.sub__menu{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+}
+.sub__menu__card h3{
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 2em;
+    margin: 16px auto;
+    text-align: center;
+}
+.sub__menu__description{
+    margin-top: 120px;
+    text-align: center;
+}
+.sub__menu__description p{
+    width: 50vw;
+    margin: auto;
+}
+
+.sub__menu__description h6{
+    font-size: 1rem;
+    margin-top: 36px;
+}
+
+/* subcribled */
+.subcribled__wrapper{
+    background: var(--primary-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 120px 0;
+}
+
+.subcribled__wrapper h2{
+    font-size: 2em;
+    margin-bottom: 24px;
+
+}
+.subcribled__wrapper p{
+    margin-bottom: 24px;
+}
+.subcribled__wrapper .subscribe__group{
+    width: 20vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.subcribled__wrapper .subscribe__group .yourEmail{
+    height: 30px;
+    border: none;
+    width: 100%;
+    outline: none;
+    border-radius: 16px;
+}
+.subcribled__wrapper .subscribe__group .yourEmail:focus,
+.subcribled__wrapper .subscribe__group .yourEmail:focus-visible{
+    outline: none;
+}
+.subscribe__group__btn{
+    background: var(--btn-color);
+    color: var(--white-color);
+    border: none;
+    font-size: 1rem;
+    padding: 8px 18px;
+    border-radius: 16px;
+    position: absolute;
+    left: 95%;
+    cursor: pointer;
+}
+/* Footer */
+#footer{
+    margin: 120px auto;
+    width: 80vw;
+}
+.footer__wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+}
+.footer__wrapper h4{
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+.social__footer{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    margin-top: 24px;
+}
+.footer__wrapper ul{
+    list-style-type: none;
+}
+
+.footer__wrapper a{
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
