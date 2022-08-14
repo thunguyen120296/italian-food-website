@@ -67,7 +67,7 @@ body{
     margin: auto;
 }
 #header .navbar{
-    padding-top: 36px;
+    /* padding-top: 36px; */
     padding-bottom: 120px;
 }
 #header .navbar__list{
@@ -173,8 +173,12 @@ body{
     display: block;
     margin: auto;
     width: 100%;
+    transform: scale(0.9);
 }
-
+.service__items .service__item__img:hover{
+    transform: scale(1);
+    transition: all 0.5s linear;
+}
 .service__wrapper button.btn__primary{
     text-align: center;
     display: block;
@@ -261,9 +265,9 @@ body{
 
 .menu .menu__img__half{
     position: absolute;
-    left: 25%;
+    left: 0%;
     top: 100%;
-    transform: translate(-5%, -65%);
+    transform: translate(100%, -75%);
 }
 .menu .menu__img__full{
     position: absolute;
